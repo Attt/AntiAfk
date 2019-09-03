@@ -1,0 +1,2 @@
+# AntiAfk
+fuxk netease
