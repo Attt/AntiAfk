@@ -1,7 +1,7 @@
 # AntiAfk
 Fuxk Netease🙃
 
-需要```python3```、```win32py(pip install pypiwin32)```
+需要```python3```、```win32py(pip install pypiwin32)```，并且仅支持windows平台
 
 此脚本会使用角色随机进行移动和跳跃并释放X键位的技能，12-15分钟进行一次角色切换
 
