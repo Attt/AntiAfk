@@ -93,8 +93,8 @@ class AntiAfk:
 		self.wowWindow.setWowForeground()
 		
 		#log out to select menu
-		#self.logOut(top, bottom, right, left)
-		self.logOutUsingCommand()
+		self.logOut(top, bottom, right, left)
+		#self.logOutUsingCommand()
 		
 		#waiting for character selection screen
 		time.sleep(random.randint(30, 35))
