@@ -84,7 +84,7 @@ class AntiAfk:
 		time.sleep(0.5)
 		
 		i = 0
-		while i < 180:
+		while i < 90:
 			self.randomMove()
 			i = i + 1
 		
