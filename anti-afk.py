@@ -10,10 +10,11 @@ class WowWindow:
 		hwnd = win32gui.FindWindow(classname, titlename)
 		win32gui.SetForegroundWindow(hwnd)
 		return hwnd
-		
+
 class AntiAfk:
 	wowWindow = WowWindow()
 	def randomMove(self):
+		self.wowWindow.setWowForeground()
 		buttonList = [0x58, 0x20, 0x41, 0x44, 0x53]
 		random.shuffle(buttonList)
 		print('randomly move...', buttonList)

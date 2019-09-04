@@ -14,6 +14,7 @@ class WowWindow:
 class AntiAfk:
 	wowWindow = WowWindow()
 	def randomMove(self):
+		self.wowWindow.setWowForeground()
 		buttonList = [0x58, 0x20, 0x41, 0x44, 0x53]
 		random.shuffle(buttonList)
 		print('randomly move...', buttonList)
