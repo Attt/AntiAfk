@@ -8,3 +8,6 @@ Fuxk Netease🙃
 ```anti-afk.py```默认使用命令登出(```logOutUsingCommand```)，需要把所有角色1键设置为宏：```/logout```
 
 ```anti-afk_mc.py```使用按键登出(```logOut```)并非适配所有大小窗口，如果出错，请改为命令登出
+
+## release
+[打包好的EXE](https://github.com/Attt/AntiAfk/releases)
