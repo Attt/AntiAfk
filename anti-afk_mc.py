@@ -10,14 +10,13 @@ class WowWindow:
 		hwnd = win32gui.FindWindow(classname, titlename)
 		win32gui.SetForegroundWindow(hwnd)
 		return hwnd
-		
+
 class AntiAfk:
 	wowWindow = WowWindow()
-	def randomMove(self):
+	def killTime(self):
 		self.wowWindow.setWowForeground()
-		buttonList = [0x58, 0x20, 0x41, 0x44, 0x53]
+		buttonList = [0x58, 0x20]
 		random.shuffle(buttonList)
-		print('randomly move...', buttonList)
 		for btn in buttonList:
 			win32api.keybd_event(btn,0,0,0)
 			time.sleep(random.randint(1, 2))
@@ -83,9 +82,10 @@ class AntiAfk:
 		self.wowWindow.setWowForeground()
 		time.sleep(0.5)
 		
+		print('kill time...')
 		i = 0
 		while i < 90:
-			self.randomMove()
+			self.killTime()
 			i = i + 1
 		
 		#take a break
