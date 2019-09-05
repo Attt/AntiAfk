@@ -1,3 +1,4 @@
+## DeprecationWarning
 import win32api,win32con,win32gui
 import time,random
 
